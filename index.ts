@@ -1,5 +1,7 @@
 import { DateTime } from "luxon";
 import "./windowSize.js";
+export * from "./hooks/debounce";
+export * from "./hooks/tracker";
 
 type TrackerEvent = {
   timestamp: number;
@@ -135,4 +137,6 @@ class Analytics {
   }
 }
 
-export const ESGIAnalytics = new Analytics();
+const ESGIAnalytics = new Analytics();
+
+export default ESGIAnalytics;

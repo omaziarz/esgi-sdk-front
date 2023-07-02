@@ -1,6 +1,7 @@
 import { Ref, useEffect, useRef, useState } from "react";
 import { useLocation } from "react-router-dom";
-import { ESGIAnalytics } from "..";
+
+import ESGIAnalytics from "..";
 import { useThrottle } from "./debounce";
 
 interface TrackerParams {

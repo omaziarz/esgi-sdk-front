@@ -1,10 +1,19 @@
 {
-  "name": "esgi-analytics-sdk-front",
+  "name": "@omaziarz/esgi-analytics-sdk-front",
   "description": "package for a university analytics project",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "1.5.0",
+  "main": "dist/index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc && cp windowSize.js dist/windowSize.js"
   },
   "devDependencies": {
     "@types/luxon": "^3.3.0",

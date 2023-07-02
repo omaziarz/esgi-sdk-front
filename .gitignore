@@ -1,6 +1,4 @@
-*.js
-*.d.ts
-!windowSize.js
+dist
 
 node_modules/
 ```

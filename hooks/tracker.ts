@@ -109,7 +109,7 @@ export function useMouseTracker<T>(): Ref<T> {
   return ref as Ref<T>;
 }
 
-export const useRouterMiddleware = () => {
+export function useRouterMiddleware() {
   const location = useLocation();
 
   useEffect(() => {
@@ -123,4 +123,4 @@ export const useRouterMiddleware = () => {
       },
     ]);
   }, [location]);
-};
+}
